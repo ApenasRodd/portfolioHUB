@@ -229,8 +229,8 @@
     </div>
     <div class="hero-stats">
       <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Anos em TI</div></div>
-      <div class="stat"><div class="stat-num">8</div><div class="stat-label">Certificações</div></div>
-      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Projetos</div></div>
+      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Certificações</div></div>
+      <div class="stat"><div class="stat-num">8</div><div class="stat-label">Projetos</div></div>
     </div>
   </div>
 </section>
@@ -247,10 +247,10 @@
         Olá! Sou <strong>Rodrigo Sousa Nery</strong>, estudante de <strong>Redes de Computadores</strong> em Brasília, DF. Tenho paixão por construir ambientes de TI estáveis, seguros e bem documentados — onde cada decisão técnica faz sentido e pode ser reproduzida.
       </p>
       <p>
-        Minha experiência é baseada em prática real: implementação de soluções de monitoramento com <strong>Zabbix, Prometheus e Grafana</strong>, ambientes containerizados com <strong>Docker</strong>, redes e firewall com <strong>Fortinet</strong>, além de administração de servidores Linux e Windows.
+        Minha experiência é baseada em prática real: monitoramento com <strong>Zabbix, Prometheus e Grafana</strong>, ambientes containerizados com <strong>Docker</strong>, administração de <strong>Microsoft 365</strong>, virtualização com <strong>Hyper-V</strong> e firewalls como <strong>Fortinet, Sophos, Check Point, pfSense e UniFi</strong>.
       </p>
       <p>
-        Estou em transição ativa para <strong>DevSecOps</strong> — integrando automação, cultura DevOps e segurança desde o código até a produção. <strong>Disponível para novas oportunidades.</strong>
+        Já executei projetos críticos em produção — incluindo migração e recuperação de ambientes Hyper-V com Domain Controller ativo, Hyper-V Replica com certificado e consolidação de discos virtuais. Estou em transição ativa para <strong>DevSecOps</strong>, integrando automação, cultura DevOps e segurança desde o código até a produção. <strong>Disponível para novas oportunidades.</strong>
       </p>
     </div>
     <div class="contact-card">
@@ -296,7 +296,7 @@
       <div class="cv-item">
         <div class="cv-item-year">2024 – Atual</div>
         <div class="cv-item-title">Técnico de Suporte em TI — N2 / Infraestrutura</div>
-        <div class="cv-item-sub">Vanelos Tecnologia · Brasília, DF — Suporte avançado de infraestrutura, monitoramento, redes e segurança.</div>
+        <div class="cv-item-sub">Vanelos Tecnologia · Brasília, DF — Suporte N2, administração de infraestrutura, Windows Server, Active Directory, Microsoft 365, Hyper-V, DNS/DHCP/VPN, firewalls (Fortinet, Sophos, Check Point, pfSense, UniFi) e monitoramento com Zabbix.</div>
       </div>
       <div class="cv-item">
         <div class="cv-item-year">2021</div>
@@ -318,7 +318,7 @@
       <h3 style="margin-top:2rem">🌎 Idiomas</h3>
       <div class="lang-grid" style="margin-top:1rem">
         <div class="lang-card"><div class="lang-flag">🇧🇷</div><div class="lang-name">Português</div><div class="lang-level">Nativo</div></div>
-        <div class="lang-card"><div class="lang-flag">🇺🇸</div><div class="lang-name">Inglês</div><div class="lang-level">Técnico / Leitura</div></div>
+        <div class="lang-card"><div class="lang-flag">🇺🇸</div><div class="lang-name">Inglês</div><div class="lang-level">Avançado</div></div>
       </div>
       
     </div>
@@ -357,6 +357,14 @@
         </div>
                 <div class="skill-row">
           <div class="skill-label"><span>Redes</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Hyper-V / Virtualização</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Microsoft 365</span><span>85%</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
         </div>
       </div>
@@ -442,6 +450,45 @@
     </div>
 
     <div class="project-card">
+      <div class="project-thumb" style="background: linear-gradient(135deg,#1a3a4a,#0e6e8c)">🖥️</div>
+      <div class="project-body">
+        <div class="project-cat">Infra / Virtualização · Produção</div>
+        <div class="project-title">Migração Hyper-V — 7 VMs em Produção</div>
+        <p class="project-desc">Planejamento, execução e validação da migração completa de 7 VMs em produção entre hosts físicos: Domain Controller, File Server, banco de dados e sistemas de monitoramento. Zero downtime crítico no processo.</p>
+        <div class="project-tags">
+          <span class="tag">Hyper-V</span><span class="tag">Windows Server</span><span class="tag">Active Directory</span><span class="tag">Migração</span>
+        </div>
+        <a href="https://github.com/ApenasRodd/hyperv-migration-lab" target="_blank" class="project-link">Ver documentação →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb" style="background: linear-gradient(135deg,#3a1a1a,#8c2020)">🔧</div>
+      <div class="project-body">
+        <div class="project-cat">Infra / Recuperação · Produção</div>
+        <div class="project-title">Recuperação de Domain Controller em Hyper-V</div>
+        <p class="project-desc">Diagnóstico e recuperação de Domain Controller em novo host Hyper-V: correção de falhas críticas de secure channel, registros DNS corrompidos, sincronização NTP e reconfiguração de DHCP. Ambiente restaurado sem rebuild.</p>
+        <div class="project-tags">
+          <span class="tag">Active Directory</span><span class="tag">DNS</span><span class="tag">DHCP</span><span class="tag">NTP</span><span class="tag">Hyper-V</span>
+        </div>
+        <a href="https://github.com/ApenasRodd/hyperv-dc-recovery" target="_blank" class="project-link">Ver documentação →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb" style="background: linear-gradient(135deg,#1a2a3a,#2a5c8c)">🔁</div>
+      <div class="project-body">
+        <div class="project-cat">Infra / Alta Disponibilidade</div>
+        <div class="project-title">Hyper-V Replica com Autenticação por Certificado</div>
+        <p class="project-desc">Configuração de Hyper-V Replica entre servidor primário e secundário com autenticação por certificado. Inclui consolidação de discos virtuais (merge de AVHDXs) e conversão de discos de réplica para VHDXs independentes.</p>
+        <div class="project-tags">
+          <span class="tag">Hyper-V Replica</span><span class="tag">Certificados</span><span class="tag">AVHDX</span><span class="tag">HA</span>
+        </div>
+        <a href="https://github.com/ApenasRodd/hyperv-replica-lab" target="_blank" class="project-link">Ver documentação →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
       <div class="project-thumb" style="background: linear-gradient(135deg,#2c3e50,#4a6741)">🌐</div>
       <div class="project-body">
         <div class="project-cat">Acadêmico · Git & GitHub Pages</div>
@@ -485,6 +532,10 @@
         <h3>🔒 Segurança & Redes</h3>
         <div class="hexgrid">
           <div class="hex-item"><div class="hex-icon">🛡️</div><div class="hex-label">Fortinet</div></div>
+          <div class="hex-item"><div class="hex-icon">🔵</div><div class="hex-label">Sophos</div></div>
+          <div class="hex-item"><div class="hex-icon">✔️</div><div class="hex-label">Check Point</div></div>
+          <div class="hex-item"><div class="hex-icon">🟠</div><div class="hex-label">pfSense</div></div>
+          <div class="hex-item"><div class="hex-icon">📡</div><div class="hex-label">UniFi</div></div>
           <div class="hex-item"><div class="hex-icon">🌐</div><div class="hex-label">TCP-IP</div></div>
           <div class="hex-item"><div class="hex-icon">🔀</div><div class="hex-label">NAT / VIP</div></div>
           <div class="hex-item"><div class="hex-icon">🏷️</div><div class="hex-label">DNS Split</div></div>
@@ -499,6 +550,8 @@
           <div class="hex-item"><div class="hex-icon">🐧</div><div class="hex-label">Linux</div></div>
           <div class="hex-item"><div class="hex-icon">🪟</div><div class="hex-label">Windows Server</div></div>
           <div class="hex-item"><div class="hex-icon">🏢</div><div class="hex-label">Active Directory</div></div>
+          <div class="hex-item"><div class="hex-icon">📧</div><div class="hex-label">Microsoft 365</div></div>
+          <div class="hex-item"><div class="hex-icon">💾</div><div class="hex-label">Hyper-V</div></div>
           <div class="hex-item"><div class="hex-icon">🐋</div><div class="hex-label">Docker</div></div>
           <div class="hex-item"><div class="hex-icon">🐙</div><div class="hex-label">Portainer</div></div>
           <div class="hex-item"><div class="hex-icon">☁️</div><div class="hex-label">OCI / Azure</div></div>
@@ -523,6 +576,10 @@
           <div class="cert-mini"><span class="cert-mini-icon">💾</span><div><div class="cert-mini-name">Acronis Advanced Backup</div><div class="cert-mini-by">Acronis · 2025</div></div></div>
           <div class="cert-mini"><span class="cert-mini-icon">🌐</span><div><div class="cert-mini-name">Networking Basics</div><div class="cert-mini-by">Cisco · 2025</div></div></div>
           <div class="cert-mini"><span class="cert-mini-icon">⚙️</span><div><div class="cert-mini-name">Fundamentos ITIL</div><div class="cert-mini-by">iTalents · 2025</div></div></div>
+          <div class="cert-mini"><span class="cert-mini-icon">✔️</span><div><div class="cert-mini-name">CheckPoint CloudGuard Pre-Sales</div><div class="cert-mini-by">Check Point · 2024</div></div></div>
+          <div class="cert-mini"><span class="cert-mini-icon">🔐</span><div><div class="cert-mini-name">Intro to Cybersecurity</div><div class="cert-mini-by">Cisco · 2025</div></div></div>
+          <div class="cert-mini"><span class="cert-mini-icon">📋</span><div><div class="cert-mini-name">LGPD Fundamentos</div><div class="cert-mini-by">Fund. Bradesco · 2025</div></div></div>
+          <div class="cert-mini"><span class="cert-mini-icon">♾️</span><div><div class="cert-mini-name">Acronis Advanced (7 certs)</div><div class="cert-mini-by">Acronis · 2025</div></div></div>
         </div>
       </div>
     </div>
@@ -584,7 +641,7 @@
 <section id="extras">
   <div class="section-header fade-up">
     <div class="section-label">06 / Adicionais</div>
-    <h2 class="section-title">Certificados, Eventos<br>& Extras</h2>
+    <h2 class="section-title">Certificações<br>& Extras</h2>
   </div>
   <div class="extras-grid fade-up">
     <div class="extra-card">
@@ -634,6 +691,34 @@
       <div>
         <div class="extra-title">Fundamentos ITIL</div>
         <div class="extra-sub">iTalents · 2025 — Gestão de serviços de TI e melhores práticas ITIL.</div>
+      </div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">✔️</div>
+      <div>
+        <div class="extra-title">Check Point CloudGuard Pre-Sales Technical Specialist</div>
+        <div class="extra-sub">Check Point · 2024 — Expira set/2026 — Segurança em cloud e posicionamento técnico de soluções.</div>
+      </div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">♾️</div>
+      <div>
+        <div class="extra-title">Acronis Cloud Tech Associate — 7 Certificações</div>
+        <div class="extra-sub">Acronis · 2025 — Backup, DR, Email Security, EDR, Automation, Management e Fundamentals.</div>
+      </div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">🔐</div>
+      <div>
+        <div class="extra-title">Cisco — Introduction to Cybersecurity</div>
+        <div class="extra-sub">Cisco Networking Academy · 2025 — Ameaças, vulnerabilidades e defesa de redes.</div>
+      </div>
+    </div>
+    <div class="extra-card">
+      <div class="extra-icon">📋</div>
+      <div>
+        <div class="extra-title">LGPD — Lei Geral de Proteção de Dados</div>
+        <div class="extra-sub">Fundação Bradesco · 2025 — Fundamentos legais e práticos da LGPD.</div>
       </div>
     </div>
   </div>
